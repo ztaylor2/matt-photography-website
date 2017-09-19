@@ -5,7 +5,7 @@ var app = app || {};
   const aboutController = {};
 
   aboutController.init = () => {
-    $('#home').show().siblings().hide();
+    $('#about').show().siblings().hide();
   };
 
   module.aboutController = aboutController;

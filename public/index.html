@@ -7,26 +7,71 @@
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/layout.css">
     <link rel="stylesheet" href="style/modules.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header>
+
+    <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="/">Matthew Orehek</a>
+      </div>
       <nav>
-        <ul>
-          <li><h1>Matthew Orehek Photography</h1></li>
-          <li><a class="nav-link" href="/contact">Contact</a></li>
-          <li><a class="nav-link" href="/about">About</a></li>
-          <li><a class="nav-link" href="/gallery">Gallery</a></li>
-          <li><a class="nav-link" href="/">Home</a></li>
-          <li><a class="icon">&#9776;</a></li>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="#!">Gallery</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="#!">Adventure</a>
+              </li>
+              <li>
+                <a href="#!">Landscapes</a>
+              </li>
+              <li>
+                <a href="#!">Wildlife</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </section>
 
     <main>
-      <section id="home"> home </section>
+      <section id="home">
+        <img class="heroImage" src="img/frog.jpg"/>
+      </section>
+
       <section id="gallery"> gallery </section>
-      <section id="about"> about </section>
-      <section id="contact"> contact </section>
+
+      <section id="about">
+        <p>Matt Orehek is a self-taught freelance photographer from Seattle, Washington.
+        </br></br>
+          Born and raised in Seattle, he has spent years exploring the magnificent natural features that surround the city. He attended Claremont McKenna College in Southern California, graduating in May 2017 with dual degrees in Economics and Government. After visiting some of the most beautiful locations on the west coast, he turned to photography as a way to document his travels. First picking up a DSLR camera in January of 2017, his work focuses on human interaction with the living world. He has worked with both outdoor and active lifestyle brands.
+        </p>
+      </section>
+
+      <section id="contact">
+        <ul>
+          <li>Email: morehek@yahoo.com</li>
+          <li>Phone: 206-290-1241</li>
+          <li>Instagram: @Matt_Orehek</li>
+        </ul>
+        </br>
+        <p>
+          My website is in its early development stages, so at this point all my business is conducted via email and phone. Please contact me directly with any business inquiries.
+        </p>
+      </section>
     </main>
 
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
@@ -40,6 +85,9 @@
     <script type="text/javascript" src="scripts/controllers/contactController.js"></script>
     <script type="text/javascript" src="scripts/controllers/galleryController.js"></script>
     <script type="text/javascript" src="scripts/controllers/homeController.js"></script>
+
+    <script type="text/javascript" src="scripts/views/navView.js"></script>
+    <script type="text/javascript" src="scripts/views/homeView.js"></script>
 
     <script type="text/javascript" src="scripts/controllers/routes.js"></script>
   </body>
