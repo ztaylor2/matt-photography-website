@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/*NAV BAR STYLING*/
 .navigation {
   height: 70px;
   background: #262626;
@@ -37,6 +37,8 @@ nav ul li {
 }
 nav ul li a,
 nav ul li a:visited {
+  font-family: sans-serif;
+  font-weight: lighter;
   display: block;
   padding: 0 20px;
   line-height: 70px;
