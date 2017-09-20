@@ -1,3 +1,5 @@
+/*TAB STYLING*/
+/*about page styling*/
 #about {
   max-width: 700px;
   display: block;
@@ -6,10 +8,29 @@
   line-height: 1.5em;
 }
 
+/*contact page styling*/
 #contact {
   max-width: 700px;
   display: block;
   margin: auto;
   padding: 50px;
   line-height: 1.5em;
+}
+
+/*home page styling*/
+.heroImage {
+  max-width: 100%;
+}
+
+button {
+  padding: 2em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border: none;
+  margin-top: -40%;
+}
+
+.button-right {
+  right: 0;
 }
