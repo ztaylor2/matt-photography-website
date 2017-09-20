@@ -27,6 +27,10 @@ var app = app || {};
       n = slideIndex;
     }
 
+    if(slideIndex > 7) {
+      slideIndex = 0;
+    }
+
     if(n === undefined) {
       n = slideIndex;
     }
@@ -52,7 +56,6 @@ var app = app || {};
 
   // right button functionality
   $('.button-right').on('click', function() {
-    slideIndex++;
     homeView.carousel(slideIndex);
   })
 
