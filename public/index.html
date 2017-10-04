@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Zachary M. Taylor</title>
+    <title>Matt Orehek Photography</title>
     <link rel="stylesheet" href="vendor/style/reset.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/layout.css">
@@ -14,7 +14,7 @@
     <section class="navigation">
     <div class="nav-container">
       <div class="brand">
-        <a href="/">Zachary M. Taylor</a>
+        <a href="/">Matthew Orehek</a>
       </div>
       <nav>
         <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -22,15 +22,20 @@
           <li>
             <a href="/">Home</a>
           </li>
-
           <li>
-            <a href="/#!">Projects</a>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="#!">Gallery</a>
             <ul class="nav-dropdown">
               <li>
-                <a href="/algorithm">Algorithm Walkthroughs</a>
+                <a href="/adventure">Adventure</a>
               </li>
               <li>
-                <a href="/permits">Building Permits</a>
+                <a href="/landscapes">Landscapes</a>
+              </li>
+              <li>
+                <a href="/wildlife">Wildlife</a>
               </li>
             </ul>
           </li>
@@ -44,22 +49,40 @@
 
     <main>
       <section id="home">
+        <img class="heroImage" id="img1" src="img/frog.jpg"/>
+        <img class="heroImage" id="img2" src="img/gnome.jpg"/>
+        <img class="heroImage" id="img3" src="img/goat.jpg"/>
+        <img class="heroImage" id="img4" src="img/lake.jpg"/>
+        <img class="heroImage" id="img5" src="img/pond.jpg"/>
+        <img class="heroImage" id="img6" src="img/raft.jpg"/>
+        <img class="heroImage" id="img7" src="img/rock.jpg"/>
+        <img class="heroImage" id="img8" src="img/sean.jpg"/>
+
+        <button class="button-left">&#10094;</button>
+        <button class="button-right">&#10095;</button>
       </section>
 
-      <section id="projects"> Projects </section>
-
-      <section id="algorithm"> Algorithm Walkthroughs </section>
-      <section id="permits"> Building Permits </section>
+      <section id="adventure"> adventure </section>
+      <section id="landscapes"> landscapes </section>
+      <section id="wildlife"> wildlife </section>
 
       <section id="about">
+        <p>Matt Orehek is a self-taught freelance photographer from Seattle, Washington.
+        </br></br>
+          Born and raised in Seattle, he has spent years exploring the magnificent natural features that surround the city. He attended Claremont McKenna College in Southern California, graduating in May 2017 with dual degrees in Economics and Government. After visiting some of the most beautiful locations on the west coast, he turned to photography as a way to document his travels. First picking up a DSLR camera in January of 2017, his work focuses on human interaction with the living world. He has worked with both outdoor and active lifestyle brands.
+        </p>
       </section>
 
       <section id="contact">
         <ul>
-          <li>Email: ZacharyMTaylor3@gmail.com</li>
-          <li>Phone: 206-450-6307</li>
-          <li>GitHub: ZTaylor2</li>
+          <li>Email: morehek@yahoo.com</li>
+          <li>Phone: 206-290-1241</li>
+          <li>Instagram: @Matt_Orehek</li>
         </ul>
+        </br>
+        <p>
+          My website is in its early development stages, so at this point all my business is conducted via email and phone. Please contact me directly with any business inquiries.
+        </p>
       </section>
     </main>
 
@@ -75,10 +98,10 @@
 
     <script type="text/javascript" src="scripts/controllers/aboutController.js"></script>
     <script type="text/javascript" src="scripts/controllers/contactController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/adventureController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/wildlifeController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/landscapeController.js"></script>
     <script type="text/javascript" src="scripts/controllers/homeController.js"></script>
-    <script type="text/javascript" src="scripts/controllers/algorithmController.js"></script>
-    <script type="text/javascript" src="scripts/controllers/permitsController.js"></script>
-    <script type="text/javascript" src="scripts/controllers/projectsController.js"></script>
 
     <script type="text/javascript" src="scripts/controllers/routes.js"></script>
   </body>
